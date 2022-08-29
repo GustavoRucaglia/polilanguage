@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+  }
+  body,
+  ul {
+    margin: 0px;
+    padding: 0px;
+   
+  }
+  
+  #header a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+#header a:hover {
+    background:#ff9315;
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  #header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff8800 ;
+    margin: 0px;
+    }
+  
+  
+  #menu  {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+    color: white;
+    overflow: hidden;
+    
+  }
+  #container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(135deg, #190c4d, #390b67, #55038b, #8807d2);
+  height: 91vh;
+  width: 100%;
+ background-size: 400%, 400%;
+ animation: degrade-animado 10s ease-in-out infinite;
+  } 
+  @keyframes degrade-animado{
+    0%{
+      background-position: 0 50%; 
+    }
+    50%{
+        background-position: 100% 30%;
+    }
+     100%{
+       background-position: 0 50% ;
+    }
+
+    }
+   
+   #form{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(250, 248, 248);
+    text-align: center;
+    
+   }
+   .icondados{
+    margin-right: 3px ;
+   }
+   .cadastro{
+    font-size:  small;
+    color: rgb(33, 33, 33);
+
+   }
+   .cadastro a{
+    font-weight: bold;
+    text-decoration: underline;
+
+   }
+   .icon{
+    height: 3.5vh;
+    width: 2.8vw;
+    border-radius: 50%;
+   
+    
+   }
+   .facebook {
+    border: 2px solid black;
+    height: 5vh;
+    width: 18vw;
+    overflow: hidden;
+   }
+   .email {
+    border: 2px solid black;
+    height: 5vh;
+    width: 125px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 0.25vh ;
+    margin-right: 20px ;
+   }
+   .email label{
+    position: absolute;
+    top: 0.6vh;
+    padding-left: 2.5px ;
+   }
+   .email a{
+    position: absolute;
+    right: 13px ;
+    top: 0.3vh;
+    width: 100%;
+    overflow: hidden;
+   
+   }
+   .email:hover{
+    transform: scale(1.05);
+   
+   }
+   .facebook{
+    border: 2px solid black;
+    height: 5.15vh;
+    width: 125px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 0.25vh ;
+   }
+   .facebook label{
+    position: absolute;
+    top: 0.6vh;
+    padding-left: 2.5px ;
+   }
+   .facebook img{
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+    padding-bottom: 0.5vh;
+   }
+   .email img{
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+    padding-bottom: 0.5vh;
+   }
+   .facebook a{
+    position: absolute;
+    right: 12px ;
+    top: 0.3vh;
+    width: 100%;
+    overflow: hidden;
+   }
+   .facebook:hover{
+    transform: scale(1.05);
+   
+   }
+   .icon img{
+    height: 100%;
+    width: 100%;
+   }
+   
+   
+   .linha{
+    height: 2px;
+    width: 22.4vw;
+    margin: 0px ;
+    margin-right: 3px;
+    background-color: black;
+    overflow: hidden;
+
+   }
+   #conect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .linha1{
+    height: 2px;
+    width: 20vw;
+    margin: 0px;
+    margin-left: 3px;
+    background-color: black;
+    
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    height: 10vh;
+    display: flex;
+   
+  }
+  .social a{
+    padding-right: 25px;
+    color: rgb(1, 1, 1);
+  }
+  #continue{
+    border-radius: 20px;
+    height: 5vh;
+    width: 25vh;
+    background-image: linear-gradient(135deg, #200b74, #630db8, #55038b, #8807d2);
+    background-size: 400% 400% ;
+    animation: degrade-animado 10s ease-in-out infinite;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    transition: transform 1s cubic-bezier(0, 1.18, 1, 1.66);
+    animation: zoomIn;
+     animation-duration: 2s
+  }
+  #continue:hover{
+     transform: scale(1.1);
+  }
+.underline{
+  width: 25vw;
+  height: 1px;
+  background: #5f5f63;
+  position: absolute;
+  left: 13.9vw;
+ 
+ padding-bottom: 2px;
+}
+  .formulario{
+   box-sizing: border-box;
+   border: 0;
+   position: relative;
+   width: 25vw;
+   padding-bottom: 5px;
+   outline: none;
+  }
+ 
+  #formulario1 input:focus ~ .underline{
+   background-color: #61127b;
+   transform: scaleX(1);
+   animation: underline 1s ease-in-out ;
+  }
+  
+  @keyframes underline{
+    0%{
+      width: 0vw;
+    }
+    20%{
+      width: 5vw;
+    }
+    40%{
+      width: 10vw;
+    }
+    60%{
+      width: 15vw;
+    }
+    80%{
+      width: 20vw;
+    }
+    100%{
+      width: 25vw;
+    }
+  }
+ 
+    
+  
+  #formulario1{
+    position: relative;
+    height: 010vh;
+
+  }
+.icondados{
+  position: absulute;
+  top: 2vh;
+}
+    @media (max-width: 700px){
+    .swiper {
+        height: 270px;
+      }
+      #menu {
+        display: block;
+        position: absolute;
+        width: 0;
+        top: 60px;
+        right: 0px;
+
+        background: #ff8800 ;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 100vh;
+        visibility: hidden;
+        overflow-y: hidden;
+        margin: 0px;
+      }
+      #nav.active #menu {
+        width: 50%;
+        visibility: visible;
+        overflow-y: auto;
+      }
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      }
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+      #form{
+        height: 70vh;
+        width: 60vh;
+        background-color: rgb(250, 248, 248);
+        border-radius: 8px;
+       }
+       #container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(135deg, #190c4d, #390b67, #55038b, #8807d2);
+        height: 92vh;
+        width: 100%;
+       background-size: 400%, 400%;
+       animation: degrade-animado 10s ease-in-out infinite;
+        } 
+        .underline{
+          width: 150px;
+          left: 150px ;
+    }
+    
+    @keyframes underline{
+      0%{
+        width: 0vw;
+      }
+      25%{
+        width: 5vw;
+      }
+      50%{
+        width: 10vw;
+      }
+      75%{
+        width: 15vw;
+      }
+      100%{
+        width: 20vw;
+      }
+     
+    }
+    .email label{
+      display: none;
+    }
+    
+    .facebook label{
+      display: none;
+    }
+    
+     .email {
+      border: 2px solid black;
+      height: 5vh;
+      width: 12vw;
+      overflow: hidden;
+      display: flex;
+      border-radius: 20px;
+      position: relative;
+      margin-top: 0.25vh ;
+      margin-right: 20px ;
+     }
+     .email label{
+      position: absolute;
+      top: 0.6vh;
+      padding-left: 2.5px ;
+     }
+     .email a{
+      position: absolute;
+      right: -1.8vw ;
+      top: 0.3vh;
+      width: 100%;
+      overflow: hidden;
+     
+     }
+     
+     .facebook{
+      border: 2px solid black;
+      height: 5.15vh;
+      width: 12vw;
+      overflow: hidden;
+      display: flex;
+      border-radius: 20px;
+      position: relative;
+      margin-top: 0.25vh ;
+     }
+     .facebook a{
+      position: absolute;
+      right: -1.8vw ;
+      top: 0.3vh;
+      width: 100%;
+      overflow: hidden;
+     
+     }
+     
+  }

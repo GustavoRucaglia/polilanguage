@@ -1,0 +1,387 @@
+*{
+     box-sizing: border-box;
+     overflow-x: hidden;
+     
+   }
+   body,
+   ul {
+     margin: 0px;
+     padding: 0px;
+    
+   }
+   
+   a {
+     color: white;
+     text-decoration: none;
+     font-family: sans-serif;
+   }
+   
+   a:hover {
+     background:#ff9315;
+   }
+   
+   #logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+   }
+   
+   #header {
+     box-sizing: border-box;
+     width: 100%;
+     height: 70px;
+     padding: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #ff8800 ;
+     }
+   
+   
+   #menu  {
+     display: flex;
+     list-style: none;
+     gap: 0.5rem;
+   }
+   
+   #menu a {
+     display: block;
+     padding: 0.5rem;
+   }
+   
+   #btn-mobile {
+     display: none;
+     color: white;
+   }
+   .container{
+       
+       align-items: center;
+   }
+   #inicio{
+      width: 100%;
+      height: 30vh;
+      background-image: linear-gradient(135deg, #160657, #4d0a90, #650aa2, #8807d2);
+      background-size: 400% 400%;
+      animation: degrade-animado 10s ease-in-out infinite ;
+      display: flex;
+      color: white;
+       font: candara;
+       
+   }
+   #inicio h1 {
+       color: white;
+       margin: 10px;
+       font: candara;
+       padding: 10px;
+   }
+   #inicio p{
+       margin: 10px;
+       padding: 10px;
+   }
+   .inicio1{
+       
+       width: 50%;
+       gap: 0.5rem;
+   }
+   .inicio2{
+       
+       width: 50%;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+   }
+   .inicio2 img {
+       width: 150%;
+       height: 150%;
+       position: absolute;
+       top: px;
+       bottom: 45px;
+   }
+   
+   @keyframes degrade-animado{
+       0%{
+         background-position: 0 50%; 
+       }
+       50%{
+           background-position: 100% 30%;
+       }
+        100%{
+          background-position: 0 50% ;
+       }
+       
+   }
+   .container-idioma{
+       padding: 0px;
+       display:flex;
+       margin: 0px;
+       height: 250px;
+       width: 100%;
+       flex-direction: column; justify-content: center;
+       align-items: center;
+       overflow: none;
+       background-color: #fff;
+       position: relative;
+   }
+   .caixa-idiomas{
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    
+        }
+   .idioma{
+       height: 80px;
+       width:80px;
+    border-radius: 50%;
+    display: flex;
+     margin-left: 20px;
+     background-color:#ff0000;
+     justify-content: center;
+     align-items: center; 
+     background-size: 100%;  
+         }
+    .idioma4{
+       background: url(image/reinoUnido.png) no-repeat 100% 100%;
+       background-size:100%;
+            height: 80px;
+       width:80px;
+    border-radius: 50%;
+    display: flex;
+     margin-left: 20px;
+     justify-content: center;
+     align-items: center; 
+     background-size: 100%;  
+    }
+    .img{
+        background-size:100%;
+            height: 80px;
+       width:80px;
+    border-radius: 50%;
+    display: flex;
+     margin-left: 20px;
+     justify-content: center;
+     align-items: center; 
+     background-size: 100%; 
+    
+    }
+    .nomes{
+        display: flex;
+       
+    }
+   
+     .footer{
+           
+           background-color: #ff8800;
+           color: #fff;
+           font-size: x-small;
+           align-items: left;
+           height: 320px;
+           padding: 8px;
+           line-height: 30px;
+            overflow: hidden;
+       }
+       .marca{
+           text-align:center;
+       }
+   span {
+     font-size: x-large;
+   }
+   
+   img {
+     box-shadow: 0 1px 2px #0003;
+     width: 100%;
+   }
+   
+   .swiper {
+     height: 400px;
+     width: 70%;
+   }
+   
+   .swiper-slide {
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .sobre{
+      text-align:center;
+      font-size: 20px;
+      
+   }
+   .sobre2{
+       display: flex;
+          width: 50%;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width:100%;
+   }
+   .sobre3 {
+       
+       position: absulute;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       right: -100px;
+       width: 50%;
+   }
+   .sobre3 img{
+       height: 70%;
+       width: 70%;
+       border-radius: 5px;
+   }
+   .sobre4{
+        position: absulute;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       left: -100px;
+       width: 50%;
+       margin-left: 5px;
+       padding-left: 5px;
+   }
+   .sobre6 img{
+       height: 100%;
+       width: 100%;
+       border-radius: 5px;
+   }
+   .sobre5{
+     margin: 10px;
+   }
+   .nomes{
+      display: flex;
+      
+   }
+   .nomes2{
+      text-align: right ;
+      width: 50%;
+      padding-top: 32px;
+   }
+   .nomes1{
+     margin-left: 20px;
+   }
+   #reinoUnido::after{
+     content: "Reino Unido";
+     color: #6f6a75;
+     position: relative;
+     bottom: 20px;
+     height: 20px;
+     width: 20px;
+   }
+   
+   @media (max-width: 700px){
+   .swiper {
+       height: 270px;
+     }
+     #menu {
+      display: block;
+      position: absolute;
+      width: 0;
+      top: 60px;
+      right: 0px;
+
+      background: #ff8800 ;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 100vh;
+      visibility: hidden;
+      overflow-y: hidden;
+      margin: 0px;
+    }
+    #nav.active #menu {
+      width: 50%;
+      visibility: visible;
+      overflow-y: auto;
+      overflow: hidden;
+    }
+     #menu a {
+       padding: 1rem 0;
+       margin: 0 1rem;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+     }
+     #btn-mobile {
+       display: flex;
+       padding: 0.5rem 1rem;
+       font-size: 1rem;
+       border: none;
+       background: none;
+       cursor: pointer;
+       gap: 0.5rem;
+     }
+     #hamburger {
+       border-top: 2px solid;
+       width: 20px;
+       overflow: hidden;
+     }
+     #hamburger::after,
+     #hamburger::before {
+       content: '';
+       display: block;
+       width: 20px;
+       height: 2px;
+       background: currentColor;
+       margin-top: 5px;
+       transition: 0.3s;
+       position: relative;
+       overflow: hidden;
+     }
+     #nav.active #hamburger {
+       border-top-color: transparent;
+       overflow: hidden;
+     }
+     #nav.active #hamburger::before {
+       transform: rotate(135deg);
+       overflow: hidden;
+     }
+     #nav.active #hamburger::after {
+       transform: rotate(-135deg);
+       top: -7px;
+       overflow: hidden;
+     }
+     #inicio{
+         height: 400px;
+         overflow: hidden;
+          }
+     .inicio2 img{
+         width: 140%;
+       height: 100%;
+       bottom: 100px;
+   }
+   .sobre{
+     font-size: 18px;
+   }
+   .sobre3 img{
+       height: 100%;
+       width: 100%;
+       border-radius: 5px;
+       margin: 5px;
+   }
+   .sobre6{
+        position: absulute;
+       display:flex;
+       align-items: center;
+       justify-content: center;
+       width: 50%;
+   }
+   .sobre6 img{
+       height: 120%;
+       width: 100%;
+       border-radius: 5px;
+   }
+   .sobre5{
+     margin: 5px;
+     padding: 0px;
+     width: 50%;
+   }
+   .swiper {
+     height: 500px;
+     width: 100%;
+   }
+   .footer{
+       font-size: xx-small;
+   }
+   .nomes1{
+       margin-left: 8px;
+   }
+   }

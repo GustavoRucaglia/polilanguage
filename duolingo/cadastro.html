@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="cadastro.css" rel="stylesheet">
+    <title>pagina cadastro</title>
+</head>
+<body>
+    
+     <header id="header">
+    <a id="logo" href="">Logo</a> <nav id="nav"> 
+ <button aria-label="Abrir Menu"   id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"> <span id="hamburger"></span> 
+ </button> 
+ <ul id="menu" role="menu">
+      <li><a href="index.html">Sobre</a></li>
+       <li><a href="/">login</a></li>
+        
+         <li><a href="/emBreve.html">Contatos</a></li> 
+         </ul>
+          </nav> 
+         </header>
+         <main>
+            <div id="container">
+                <div id="form">
+                    <div id="contentlogin"></div>
+                    <form id="paglog">
+                        <h2 id="titulo"> login</h2>
+                    
+                        <br>
+                        <br>
+                        <div id="formulario1">
+                        <label class="icondados"> <i class="fa-solid fa-envelope"></i></label>
+                        
+                        <input type="text" name="email" id="email" placeholder="Coloque seu email" class="formulario" >
+                        <div class="underline"></div>
+                        <br>
+                        <br>
+                        <label class="icondados"> <i class="fa-solid fa-lock"></i>  </label>
+                        <input type="password" name="senha" id="senha" placeholder="Coloque sua senha" class="formulario"  >
+                        <div class="underline"></div>
+                        </div>
+                        <Br>
+                        <input type="submit" value="Continue" id="continue" href="emBreve.html">
+                        <div class="footer">
+                            <div id="conect">
+                            <div class="linha"></div> <p>Ou conecte com </p><div class="linha1"></div>
+                            </div>
+                            <div class="social">
+                            <div class="email"><a href="emBreve.html"><img src="image/google.jpg" alt="" class="icon"> <label> conecte</label></a></div>
+                            
+                            <div class="facebook"><a href="emBreve.html"><img src="image/facebook.jpg" alt="" class="icon"> <label> conecte</label></a></div>
+                            </div>
+                        </div>
+                        <br>
+                        <label class="cadastro"> se você não tem uma conta ainda, se <a href="emBreve.html">cadastre </a> aqui</label>
+                    </form>
+                </div>
+            </div>
+         </main>
+          <script>
+            const btnMobile = document.getElementById('btn-mobile'); 
+function toggleMenu(event) { if (event.type === 'touchstart')
+ event.preventDefault(); const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+   event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) { event.currentTarget.setAttribute('aria-label', 'Fechar Menu'); }
+   else { event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+   } } btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+      
+    
+    
+    
+    
+          </script>
+          <script src="https://kit.fontawesome.com/ae37c4f9c1.js" crossorigin="anonymous"></script>
+</body>
+</html>
